@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Page</title>
+    <style>
+        /* Slider container */
+        .slider-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+        }
+        /* Slider images */
+        .slider {
+            width: 500%;
+            display: flex;
+            transition: 1s ease;
+        }
+        .slider img {
+            width: 20%;
+            transition: 0.5s;
+        }
+        /* Hover effect */
+        .slider img:hover {
+            transform: scale(1.1);
+        }
+        /* Form container */
+        .form-container {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        /* Form inputs */
+        .form-container input[type="text"],
+        .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* Submit button */
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="image1.jpg">
+            <img src="image2.jpg">
+            <img src="image3.jpg">
+            <img src="image4.jpg">
+            <img src="image5.jpg">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <form method="post" action="store_details.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <textarea name="message" placeholder="Message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
